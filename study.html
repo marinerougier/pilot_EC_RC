@@ -163,7 +163,7 @@ var consent = {
       html += "<p class='justify'>Psychological studies have shown that <b>people do form impressions of others "
       html += "on the basis of very little information</b>. The purpose of the present study is to have a better understanding ";
       html += "on <i>how</i> these impressions are formed and <i>when</i> they are accurate. </br> </br> ";
-      html += "To do so, we will <b>compare your impressions of others with how these people truly behave in their everyday life</b>.<br><br> "
+      //html += "To do so, we will <b>compare your impressions of others with how these people truly behave in their everyday life</b>.<br><br> "
       html += "This study is divided into <b>four parts</b>. In each part, you will report your impressions of different people. "
       html += "<p></br>Press <span class='light-keys'><kbd>space</kbd></span> to continue</p>";
       return html;
@@ -180,7 +180,7 @@ var consent = {
     stimulus: function() {
       var html = "";
       html += "<h1>Study of accuracy in person perception (Part 1/4)</h1>";
-      html += "<p class='justify'>To begin with, we will ask you to report your impression on the category of people <b>who are always seen together with <u>"+ Val_target[0] +"</u></b>.<br><br> ";
+      html += "<p class='justify'>To begin with, imagine being in an experiment in which <b>faces are presented together with pleasant pictures or with unpleasant pictures</b>. In such a context, how would you evaluate the category of people <b>who are always presented together with <u>"+ Val_target[0] +"</u>?</b><br><br>";
       html += "Your task will be to evaluate this category of people on <b>42 personality traits and personality outcomes. </b><br><br>";
       html += "<p class='justify'>Given that this study is on person perception, <b>we are not interested in your tact, politeness, or other ";
       html += "factors that are usually important in everyday life situations. </b></br>";
@@ -202,7 +202,7 @@ var consent = {
     stimulus: function() {
       var html = "";
       html += "<h1>Study of accuracy in person perception (Part 2/4)</h1>";
-      html += "<p class='justify'>In this second part, we will ask you to report your impression on the category of people <b>who are always seen together with <u>"+ Val_target[1] +"</u></b>.<br><br> ";
+      html += "<p class='justify'>As in the previous part, imagine being in an experiment in which <b>faces are presented together with pleasant pictures or with unpleasant pictures</b>. This time, how would you evaluate the category of people <b>who are always presented together with <u>"+ Val_target[1] +"</u>?</b><br><br>";
       html += "Your task will be to evaluate this category of people on <b>42 personality traits and personality outcomes. </b><br><br>";
       html += "<p class='justify'>Given that this study is on person perception, <b>we are not interested in your tact, politeness, or other ";
       html += "factors that are usually important in everyday life situations. </b></br>";
@@ -224,7 +224,7 @@ var consent = {
     stimulus: function() {
       var html = "";
       html += "<h1>Study of accuracy in person perception (Part 3/4)</h1>";
-      html += "<p class='justify'>In this third part, we will ask you to report your impression on the category of people <b>who are always seen together with other people that are <u>"+ Pos_target[0] +"</u></b>.<br><br> ";
+      html += "<p class='justify'>Now, imagine being in an experiment in which <b>faces are presented together with other people that are liked or with other people that are disliked</b>. In such a context, how would you evaluate the category of people <b>who are always presented together with other people that are <u>"+ Pos_target[0] +"</u></b>?<br><br>";
       html += "Your task will be to evaluate this category of people on <b>42 personality traits and personality outcomes. </b><br><br>";
       html += "<p class='justify'>Given that this study is on person perception, <b>we are not interested in your tact, politeness, or other ";
       html += "factors that are usually important in everyday life situations. </b></br>";
@@ -246,7 +246,7 @@ var consent = {
     stimulus: function() {
       var html = "";
       html += "<h1>Study of accuracy in person perception (Part 4/4)</h1>";
-      html += "<p class='justify'>In this last part, we will ask you to report your impression on the category of people <b>who are always seen together with other people that are <u>"+ Pos_target[1] +"</u></b>.<br><br> ";
+      html += "<p class='justify'>As in the previous part, imagine being in an experiment in which <b>faces are presented together with other people that are liked or with other people that are disliked</b>. This time, how would you evaluate the category of people <b>who are always presented together with other people that are <u>"+ Pos_target[1] +"</u></b>?<br><br>";
       html += "Your task will be to evaluate this category of people on <b>42 personality traits and personality outcomes. </b><br><br>";
       html += "<p class='justify'>Given that this study is on person perception, <b>we are not interested in your tact, politeness, or other ";
       html += "factors that are usually important in everyday life situations. </b></br>";
@@ -357,7 +357,7 @@ var consent = {
 
   var rating_stereotype_0 = {
         type: 'survey-likert',
-        preamble: "<b>Please evaluate the category of people who are always seen together with <u>"+ Val_target[0] +"</u>:</b><br><br>",
+        preamble: "<b>Please evaluate the category of people who are always presented together with <u>"+ Val_target[0] +"</u>:</b><br><br>",
         questions: [
           {prompt: "", labels: scaleSociable, required: true},
           {prompt: "", labels: scaleFunLoving, required: true},
@@ -469,7 +469,7 @@ var consent = {
 
 var rating_stereotype_1 = {
         type: 'survey-likert',
-        preamble: "<b>Please evaluate the category of people who are always seen together with <u>"+ Val_target[1] +"</u>:</b><br><br>",
+        preamble: "<b>Please evaluate the category of people who are always presented together with <u>"+ Val_target[1] +"</u>:</b><br><br>",
         questions: [
           {prompt: "", labels: scaleSociable, required: true},
           {prompt: "", labels: scaleFunLoving, required: true},
@@ -581,7 +581,7 @@ var rating_stereotype_1 = {
 
   var rating_stereotype_2 = {
         type: 'survey-likert',
-        preamble: "<b>Please evaluate the category of people who are always seen together with other people that are <u>"+ Pos_target[0] +"</u>:</b><br><br>",
+        preamble: "<b>Please evaluate the category of people who are always presented together with other people that are <u>"+ Pos_target[0] +"</u>:</b><br><br>",
         questions: [
           {prompt: "", labels: scaleSociable, required: true},
           {prompt: "", labels: scaleFunLoving, required: true},
@@ -693,7 +693,7 @@ var rating_stereotype_1 = {
 
 var rating_stereotype_3 = {
         type: 'survey-likert',
-        preamble: "<b>Please evaluate the category of people who are always seen together with other people that are <u>"+ Pos_target[1] +"</u>:</b><br><br>",
+        preamble: "<b>Please evaluate the category of people who are always presented together with other people that are <u>"+ Pos_target[1] +"</u>:</b><br><br>",
         questions: [
           {prompt: "", labels: scaleSociable, required: true},
           {prompt: "", labels: scaleFunLoving, required: true},
